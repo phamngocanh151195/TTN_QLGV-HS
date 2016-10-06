@@ -16,7 +16,7 @@ namespace QL_HSGV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new Frm_DangNhap());
         }
     }
 }
