@@ -10,3 +10,17 @@ E:\GitHub\TTN-QLHV_GV\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.FrmMain.reso
 E:\GitHub\TTN-QLHV_GV\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_HS.resources
 E:\GitHub\TTN-QLHV_GV\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_TTGD.resources
 E:\GitHub\TTN-QLHV_GV\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_GV.resources
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.exe.config
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.exe
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.pdb
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.exe
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.pdb
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csprojResolveAssemblyReference.cache
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.FrmMain.resources
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_GV.resources
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_HS.resources
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_QLND.resources
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_TTGD.resources
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Properties.Resources.resources
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csproj.GenerateResource.Cache
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_DangNhap.resources

@@ -33,9 +33,10 @@
             this.TStrip_HS = new System.Windows.Forms.ToolStripMenuItem();
             this.TStrip_GV = new System.Windows.Forms.ToolStripMenuItem();
             this.TStrip_TTGD = new System.Windows.Forms.ToolStripMenuItem();
+            this.TStrip_QLND = new System.Windows.Forms.ToolStripMenuItem();
+            this.TStrip_Help = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.quảnLýNgườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TStrip_Thoat = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,8 +47,9 @@
             this.TStrip_HS,
             this.TStrip_GV,
             this.TStrip_TTGD,
-            this.quảnLýNgườiDùngToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.TStrip_QLND,
+            this.TStrip_Help,
+            this.TStrip_Thoat});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(716, 24);
@@ -75,6 +77,19 @@
             this.TStrip_TTGD.Text = "Thông tin giảng dạy";
             this.TStrip_TTGD.Click += new System.EventHandler(this.TStrip_TTGD_Click);
             // 
+            // TStrip_QLND
+            // 
+            this.TStrip_QLND.Name = "TStrip_QLND";
+            this.TStrip_QLND.Size = new System.Drawing.Size(125, 20);
+            this.TStrip_QLND.Text = "Quản lý người dùng";
+            this.TStrip_QLND.Click += new System.EventHandler(this.TStrip_QLND_Click);
+            // 
+            // TStrip_Help
+            // 
+            this.TStrip_Help.Name = "TStrip_Help";
+            this.TStrip_Help.Size = new System.Drawing.Size(44, 20);
+            this.TStrip_Help.Text = "Help";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -84,17 +99,12 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // quảnLýNgườiDùngToolStripMenuItem
+            // TStrip_Thoat
             // 
-            this.quảnLýNgườiDùngToolStripMenuItem.Name = "quảnLýNgườiDùngToolStripMenuItem";
-            this.quảnLýNgườiDùngToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
-            this.quảnLýNgườiDùngToolStripMenuItem.Text = "Quản lý người dùng";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.TStrip_Thoat.Name = "TStrip_Thoat";
+            this.TStrip_Thoat.Size = new System.Drawing.Size(50, 20);
+            this.TStrip_Thoat.Text = "Thoát";
+            this.TStrip_Thoat.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -122,8 +132,9 @@
         private System.Windows.Forms.ToolStripMenuItem TStrip_HS;
         private System.Windows.Forms.ToolStripMenuItem TStrip_GV;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýNgườiDùngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TStrip_QLND;
+        private System.Windows.Forms.ToolStripMenuItem TStrip_Help;
+        private System.Windows.Forms.ToolStripMenuItem TStrip_Thoat;
 
     }
 }

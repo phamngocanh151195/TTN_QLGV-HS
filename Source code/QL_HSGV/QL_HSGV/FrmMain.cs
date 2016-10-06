@@ -34,5 +34,16 @@ namespace QL_HSGV
             Frm_TTGD TTGD = new Frm_TTGD();
             TTGD.ShowDialog();
         }
+
+        private void TStrip_QLND_Click(object sender, EventArgs e)
+        {
+            Frm_QLND QLND = new Frm_QLND();
+            QLND.ShowDialog();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

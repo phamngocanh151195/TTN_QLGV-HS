@@ -46,11 +46,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectDB.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DangNhap.Designer.cs">
+      <DependentUpon>Frm_DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_GV.cs">
       <SubType>Form</SubType>
@@ -64,6 +75,12 @@
     <Compile Include="Frm_HS.Designer.cs">
       <DependentUpon>Frm_HS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_QLND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QLND.Designer.cs">
+      <DependentUpon>Frm_QLND.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_TTGD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,11 +92,17 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DangNhap.resx">
+      <DependentUpon>Frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_GV.resx">
       <DependentUpon>Frm_GV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_HS.resx">
       <DependentUpon>Frm_HS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QLND.resx">
+      <DependentUpon>Frm_QLND.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_TTGD.resx">
       <DependentUpon>Frm_TTGD.cs</DependentUpon>
@@ -92,7 +115,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,6 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classic-login.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
