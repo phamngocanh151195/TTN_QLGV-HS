@@ -12,6 +12,7 @@ namespace QL_HSGV
 {
     public partial class Frm_DangNhap : Form
     {
+        ConnectDB CN = new ConnectDB();
         public Frm_DangNhap()
         {
             InitializeComponent();
@@ -24,13 +25,15 @@ namespace QL_HSGV
 
         private void btn_DN_Click(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.QueriesTableAdapter q = new DataSet1TableAdapters.QueriesTableAdapter();
+            string s = "select count(*) from tbllogin where username = '" + txtU.Text + "' and Pass = '" + txtP.Text + "'";
+            DataTable dt = CN.Get(s);
+            s = dt.Rows[0][0].ToString();
             if(txtU.Text==""||txtP.Text=="")
             {
                 this.label.Text = "Thông tin đăng nhập sai!";
                 txtU.Focus();
             }
-            if (q.CheckLogin(this.txtU.Text, this.txtP.Text) == 1)
+            if (s == "1")
             {
                 this.Hide();
                 FrmMain M = new FrmMain();

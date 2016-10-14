@@ -40,25 +40,25 @@
             // txtU
             // 
             this.txtU.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtU.Location = new System.Drawing.Point(170, 164);
+            this.txtU.Location = new System.Drawing.Point(144, 158);
             this.txtU.Multiline = true;
             this.txtU.Name = "txtU";
-            this.txtU.Size = new System.Drawing.Size(273, 43);
+            this.txtU.Size = new System.Drawing.Size(279, 43);
             this.txtU.TabIndex = 0;
             // 
             // txtP
             // 
             this.txtP.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtP.Location = new System.Drawing.Point(170, 218);
+            this.txtP.Location = new System.Drawing.Point(144, 212);
             this.txtP.Multiline = true;
             this.txtP.Name = "txtP";
-            this.txtP.Size = new System.Drawing.Size(273, 43);
+            this.txtP.Size = new System.Drawing.Size(279, 43);
             this.txtP.TabIndex = 1;
             // 
             // btn_DN
             // 
             this.btn_DN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DN.Location = new System.Drawing.Point(168, 268);
+            this.btn_DN.Location = new System.Drawing.Point(142, 262);
             this.btn_DN.Name = "btn_DN";
             this.btn_DN.Size = new System.Drawing.Size(94, 41);
             this.btn_DN.TabIndex = 2;
@@ -69,9 +69,9 @@
             // btn_RF
             // 
             this.btn_RF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RF.Location = new System.Drawing.Point(268, 268);
+            this.btn_RF.Location = new System.Drawing.Point(242, 262);
             this.btn_RF.Name = "btn_RF";
-            this.btn_RF.Size = new System.Drawing.Size(75, 41);
+            this.btn_RF.Size = new System.Drawing.Size(81, 41);
             this.btn_RF.TabIndex = 3;
             this.btn_RF.Text = "Refresh";
             this.btn_RF.UseVisualStyleBackColor = true;
@@ -80,7 +80,7 @@
             // btn_Thoat
             // 
             this.btn_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Thoat.Location = new System.Drawing.Point(349, 268);
+            this.btn_Thoat.Location = new System.Drawing.Point(329, 262);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(95, 41);
             this.btn_Thoat.TabIndex = 4;
@@ -90,12 +90,11 @@
             // 
             // label
             // 
-            this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label.Location = new System.Drawing.Point(220, 322);
+            this.label.Location = new System.Drawing.Point(176, 306);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(0, 18);
+            this.label.Size = new System.Drawing.Size(215, 28);
             this.label.TabIndex = 5;
             // 
             // Frm_DangNhap
