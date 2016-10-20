@@ -24,3 +24,17 @@ E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_TTGD.res
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Properties.Resources.resources
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csproj.GenerateResource.Cache
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_DangNhap.resources
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.exe.config
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.exe
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.pdb
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.exe
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.pdb
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csprojResolveAssemblyReference.cache
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.FrmMain.resources
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_DangNhap.resources
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_GV.resources
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_HS.resources
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_QLND.resources
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_TTGD.resources
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Properties.Resources.resources
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csproj.GenerateResource.Cache
