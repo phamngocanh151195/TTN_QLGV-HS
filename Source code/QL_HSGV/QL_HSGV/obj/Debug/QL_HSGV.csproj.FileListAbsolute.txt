@@ -55,3 +55,17 @@ C:\Users\Hiếu Học\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\
 C:\Users\Hiếu Học\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Properties.Resources.resources
 C:\Users\Hiếu Học\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csproj.GenerateResource.Cache
 >>>>>>> 5291b8d1a676659bb0fbf4c4399f66a1315ecab8
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.exe.config
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.exe
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.pdb
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csprojResolveAssemblyReference.cache
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.FrmMain.resources
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_DangNhap.resources
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_GV.resources
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_HS.resources
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_QLND.resources
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_TTGD.resources
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Properties.Resources.resources
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csproj.GenerateResource.Cache
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.exe
+C:\Users\HienHD\Documents\GitHub\ThucTapNhom_1214\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.pdb
