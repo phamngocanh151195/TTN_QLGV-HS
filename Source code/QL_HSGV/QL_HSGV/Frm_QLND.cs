@@ -12,6 +12,7 @@ namespace QL_HSGV
 {
     public partial class Frm_QLND : Form
     {
+        DataTable dt = new DataTable();
         ConnectDB CN = new ConnectDB();
         public Frm_QLND()
         {
@@ -20,58 +21,75 @@ namespace QL_HSGV
 
         private void Frm_QLND_Load(object sender, EventArgs e)
         {
+            dong();
             load();
         }
 
         void load()
         {
             DTGV.DataSource = CN.Get("Select * from tblLogin");
-            dong();
         }
 
         void dong()
         {
-            txt_U.Enabled = txt_P.Enabled = btn_Luu.Enabled = false;
+            txt_U.Enabled = txt_P.Enabled = btn_Luu.Enabled = txt_Quyen.Enabled = false;
         }
         void mo()
         {
             btn_Luu.Enabled = true;
             txt_P.Enabled = true;
             txt_U.Enabled = true;
+            txt_Quyen.Enabled = true;
         }
         void themTK()
         {
-            btn_Luu.Enabled = txt_P.Enabled = txt_U.Enabled = true;
-            string s = "insert into tblLogin values('" + txt_U.Text + "', '" + txt_P.Text + "')";
-            DTGV.DataSource = CN.Get(s);
+            dong();
+            btn_Luu.Enabled = txt_P.Enabled = txt_U.Enabled = txt_Quyen.Enabled = true;
+            string s = "insert into tblLogin values('" + txt_U.Text + "', '" + txt_P.Text + "', '" + txt_Quyen.Text + "')";
+
+            if (KT(txt_U.Text) == 0) dt = CN.Get(s);
+            else MessageBox.Show("Tài khoản đã tồn tại!!");
             load();
         }
 
         void SuaTK()
         {
-            btn_Luu.Enabled = txt_P.Enabled = txt_U.Enabled = true;
+            dong();
+            btn_Luu.Enabled = txt_P.Enabled = txt_U.Enabled = txt_Quyen.Enabled = true;
             int r = DTGV.CurrentCell.RowIndex;
             string User = DTGV.Rows[r].Cells[0].Value.ToString();
-            string s = "update tblLogin set Username = '" + txt_U.Text + "', Pass = '" + txt_P.Text + "' where username = '" + User + "'";
-            DTGV.DataSource = CN.Get(s);
+            string s = "update tblLogin set Username = '" + txt_U.Text + "', Pass = '" + txt_P.Text + "', Uutien = '" + txt_Quyen.Text +"' where username = '" + User + "'";
+            dt = CN.Get(s);
             load();
         }
 
         void XoaTK()
         {
+            dong();
             int r = DTGV.CurrentCell.RowIndex ;
             string User = DTGV.Rows[r].Cells[0].Value.ToString();
             string s = "delete tblLogin where username = '" + User + "'";
-            DTGV.DataSource = CN.Get(s);
+            dt = CN.Get(s);
             load();
         }
 
-        void TK()
+        void TK_U()
         {
-            txt_P.Enabled = txt_U.Enabled = true;
+            dong();
+            txt_P.Enabled = txt_U.Enabled = txt_Quyen.Enabled = true;
             string s = "Select * from tblLogin where username like N'%"+txt_U.Text+"%'";
             DTGV.DataSource = CN.Get(s);
         }
+
+        void TK_Q()
+        {
+            dong();
+            txt_P.Enabled = txt_U.Enabled = txt_Quyen.Enabled = true;
+            string s = "Select * from tblLogin where Uutien like N'%" + txt_Quyen.Text + "%'";
+            DTGV.DataSource = CN.Get(s);
+        }
+
+
         private void btn_Luu_Click(object sender, EventArgs e)
         {
             if(RdB_Them.Checked == true)
@@ -93,19 +111,21 @@ namespace QL_HSGV
 
         private void txt_U_TextChanged(object sender, EventArgs e)
         {
-            if (RdB_TK.Checked == true) TK();
+            if (RdB_TK.Checked == true) TK_U();
         }
 
         private void RdB_TK_Click(object sender, EventArgs e)
         {
             btn_Luu.Enabled = false;
-            txt_U.Enabled = txt_P.Enabled = true;
-            txt_U.Text = txt_P.Text = "";
+            txt_U.Enabled = txt_Quyen.Enabled = true;
+            txt_P.ResetText();
+            txt_U.ResetText();
+            txt_Quyen.ResetText();
         }
 
         private void txt_P_TextChanged(object sender, EventArgs e)
         {
-            if (RdB_TK.Checked == true) TK();
+            if (RdB_TK.Checked == true) TK_U();
         }
 
         private void RdB_Them_Click(object sender, EventArgs e)
@@ -128,9 +148,19 @@ namespace QL_HSGV
         {
             txt_U.Text = DTGV.Rows[e.RowIndex].Cells["Username"].Value.ToString();
             txt_P.Text = DTGV.Rows[e.RowIndex].Cells["Pass"].Value.ToString();
+            txt_Quyen.Text = DTGV.Rows[e.RowIndex].Cells["Uutien"].Value.ToString();
         }
 
+        private void txt_Quyen_TextChanged(object sender, EventArgs e)
+        {
+            if (RdB_TK.Checked == true) TK_Q();
+        }
 
+        int KT(string s)
+        {
+            dt = CN.Get("select count (*) from tblLogin where Username = '" + s + "'");
+            return Convert.ToInt16(dt.Rows[0][0].ToString());
+        }
 
     }
 }

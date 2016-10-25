@@ -37,21 +37,21 @@
             this.clmQue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmLớp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtTimMa = new System.Windows.Forms.TextBox();
-            this.txtTimTen = new System.Windows.Forms.TextBox();
             this.txtTimLop = new System.Windows.Forms.TextBox();
+            this.txtTimTen = new System.Windows.Forms.TextBox();
+            this.txtTimMa = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLammoi = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinh)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvHocSinh
@@ -131,14 +131,48 @@
             this.panel1.Size = new System.Drawing.Size(981, 112);
             this.panel1.TabIndex = 1;
             // 
-            // panel2
+            // groupBox2
             // 
-            this.panel2.Controls.Add(this.dgvHocSinh);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 112);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(981, 352);
-            this.panel2.TabIndex = 2;
+            this.groupBox2.Controls.Add(this.txtTimLop);
+            this.groupBox2.Controls.Add(this.txtTimTen);
+            this.groupBox2.Controls.Add(this.txtTimMa);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox2.Location = new System.Drawing.Point(0, 67);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(981, 45);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tìm Kiếm";
+            // 
+            // txtTimLop
+            // 
+            this.txtTimLop.Location = new System.Drawing.Point(829, 19);
+            this.txtTimLop.Name = "txtTimLop";
+            this.txtTimLop.Size = new System.Drawing.Size(149, 20);
+            this.txtTimLop.TabIndex = 0;
+            this.txtTimLop.Text = "--Lớp";
+            this.txtTimLop.Click += new System.EventHandler(this.txtTimLop_Click);
+            this.txtTimLop.TextChanged += new System.EventHandler(this.txtTimLop_TextChanged);
+            // 
+            // txtTimTen
+            // 
+            this.txtTimTen.Location = new System.Drawing.Point(143, 22);
+            this.txtTimTen.Name = "txtTimTen";
+            this.txtTimTen.Size = new System.Drawing.Size(197, 20);
+            this.txtTimTen.TabIndex = 0;
+            this.txtTimTen.Text = "   -- Họ tên học sinh";
+            this.txtTimTen.Click += new System.EventHandler(this.txtTimTen_Click);
+            this.txtTimTen.TextChanged += new System.EventHandler(this.txtTimTen_TextChanged);
+            // 
+            // txtTimMa
+            // 
+            this.txtTimMa.Location = new System.Drawing.Point(42, 22);
+            this.txtTimMa.Name = "txtTimMa";
+            this.txtTimMa.Size = new System.Drawing.Size(97, 20);
+            this.txtTimMa.TabIndex = 0;
+            this.txtTimMa.Text = "  -- Mã học sinh";
+            this.txtTimMa.Click += new System.EventHandler(this.txtTimMa_Click);
+            this.txtTimMa.TextChanged += new System.EventHandler(this.txtTimMa_TextChanged);
             // 
             // groupBox1
             // 
@@ -154,53 +188,9 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtTimLop);
-            this.groupBox2.Controls.Add(this.txtTimTen);
-            this.groupBox2.Controls.Add(this.txtTimMa);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox2.Location = new System.Drawing.Point(0, 67);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(981, 45);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tìm Kiếm";
-            // 
-            // txtTimMa
-            // 
-            this.txtTimMa.Location = new System.Drawing.Point(42, 22);
-            this.txtTimMa.Name = "txtTimMa";
-            this.txtTimMa.Size = new System.Drawing.Size(97, 20);
-            this.txtTimMa.TabIndex = 0;
-            this.txtTimMa.Text = "  -- Mã học sinh";
-            this.txtTimMa.Click += new System.EventHandler(this.txtTimMa_Click);
-            this.txtTimMa.TextChanged += new System.EventHandler(this.txtTimMa_TextChanged);
-            // 
-            // txtTimTen
-            // 
-            this.txtTimTen.Location = new System.Drawing.Point(143, 22);
-            this.txtTimTen.Name = "txtTimTen";
-            this.txtTimTen.Size = new System.Drawing.Size(197, 20);
-            this.txtTimTen.TabIndex = 0;
-            this.txtTimTen.Text = "   -- Họ tên học sinh";
-            this.txtTimTen.Click += new System.EventHandler(this.txtTimTen_Click);
-            this.txtTimTen.TextChanged += new System.EventHandler(this.txtTimTen_TextChanged);
-            // 
-            // txtTimLop
-            // 
-            this.txtTimLop.Location = new System.Drawing.Point(829, 19);
-            this.txtTimLop.Name = "txtTimLop";
-            this.txtTimLop.Size = new System.Drawing.Size(149, 20);
-            this.txtTimLop.TabIndex = 0;
-            this.txtTimLop.Text = "--Lớp";
-            this.txtTimLop.Click += new System.EventHandler(this.txtTimLop_Click);
-            this.txtTimLop.TextChanged += new System.EventHandler(this.txtTimLop_TextChanged);
-            // 
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnXoa.Enabled = false;
             this.btnXoa.Image = global::QL_HSGV.Properties.Resources.Delete;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(307, 19);
@@ -227,7 +217,6 @@
             // btnSua
             // 
             this.btnSua.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSua.Enabled = false;
             this.btnSua.Image = global::QL_HSGV.Properties.Resources.edit_icon__1_;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.Location = new System.Drawing.Point(93, 19);
@@ -251,6 +240,15 @@
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dgvHocSinh);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 112);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(981, 352);
+            this.panel2.TabIndex = 2;
+            // 
             // Frm_HS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,14 +257,15 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_HS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_HS";
             this.Load += new System.EventHandler(this.Frm_HS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinh)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

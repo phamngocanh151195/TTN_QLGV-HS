@@ -30,6 +30,7 @@
         {
             this.DTGV_GV = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.cbo_GioiTinh = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -70,7 +71,6 @@
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.txt_Them = new System.Windows.Forms.Button();
-            this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.DTGV_GV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -111,6 +111,13 @@
             this.groupBox1.Size = new System.Drawing.Size(531, 176);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // dtp_NgaySinh
+            // 
+            this.dtp_NgaySinh.Location = new System.Drawing.Point(83, 145);
+            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
+            this.dtp_NgaySinh.Size = new System.Drawing.Size(158, 20);
+            this.dtp_NgaySinh.TabIndex = 18;
             // 
             // cbo_GioiTinh
             // 
@@ -476,13 +483,6 @@
             this.txt_Them.UseVisualStyleBackColor = true;
             this.txt_Them.Click += new System.EventHandler(this.txt_Them_Click);
             // 
-            // dtp_NgaySinh
-            // 
-            this.dtp_NgaySinh.Location = new System.Drawing.Point(83, 145);
-            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
-            this.dtp_NgaySinh.Size = new System.Drawing.Size(158, 20);
-            this.dtp_NgaySinh.TabIndex = 18;
-            // 
             // Frm_GV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,6 +494,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.DTGV_GV);
             this.Name = "Frm_GV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_GV";
             this.Load += new System.EventHandler(this.Frm_GV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DTGV_GV)).EndInit();

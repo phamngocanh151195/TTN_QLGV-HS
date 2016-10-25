@@ -16,7 +16,7 @@ namespace QL_HSGV
         {
             try
             {
-                con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=TruongTHPT;Integrated Security=True");
+                con = new SqlConnection(@"Data Source=.;Initial Catalog=TruongTHPT;Integrated Security=True");
                 con.Open();
             }
             catch

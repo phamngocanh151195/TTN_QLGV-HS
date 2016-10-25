@@ -12,19 +12,27 @@ namespace QL_HSGV
 {
     public partial class FrmMain : Form
     {
+        public static string Uutien;
         public FrmMain()
         {
             InitializeComponent();
+            if(Uutien == "1")
+            {
+                TStrip_QLND.Visible = true;
+            }
+            else TStrip_QLND.Visible = false;
         }
 
         private void TStrip_HS_Click(object sender, EventArgs e)
         {
+            Frm_HS.Uutien = Uutien;
             Frm_HS HS = new Frm_HS();
             HS.ShowDialog();
         }
 
         private void TStrip_GV_Click(object sender, EventArgs e)
         {
+            Frm_GV.Uutien = Uutien;
             Frm_GV GV = new Frm_GV();
             GV.ShowDialog();
         }
@@ -44,6 +52,16 @@ namespace QL_HSGV
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
