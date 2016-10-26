@@ -36,6 +36,11 @@ namespace QL_HSGV
             if (s == "1")
             {
                 this.Hide();
+                s = "select Uutien from tbllogin where username = '" + txtU.Text + "' and Pass = '" + txtP.Text + "'";
+                dt = CN.Get(s);
+                s = dt.Rows[0][0].ToString();
+                FrmMain.Uutien = s;
+
                 FrmMain M = new FrmMain();
                 M.Show();
             }

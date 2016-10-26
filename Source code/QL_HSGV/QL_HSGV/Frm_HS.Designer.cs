@@ -193,7 +193,6 @@
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnXoa.Enabled = false;
             this.btnXoa.Image = global::QL_HSGV.Properties.Resources.Delete;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoa.Location = new System.Drawing.Point(307, 19);
@@ -222,7 +221,6 @@
             // btnSua
             // 
             this.btnSua.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnSua.Enabled = false;
             this.btnSua.Image = global::QL_HSGV.Properties.Resources.edit_icon__1_;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSua.Location = new System.Drawing.Point(93, 19);
@@ -264,7 +262,12 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_HS";
+<<<<<<< HEAD
             this.Text = "Quản lý học sinh";
+=======
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Frm_HS";
+>>>>>>> 53f3b3052bc5a0138d25970f2f7338bfc0953eb1
             this.Load += new System.EventHandler(this.Frm_HS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinh)).EndInit();
             this.panel1.ResumeLayout(false);

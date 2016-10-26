@@ -489,6 +489,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.DTGV_GV);
             this.Name = "Frm_GV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_GV";
             this.Load += new System.EventHandler(this.Frm_GV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DTGV_GV)).EndInit();

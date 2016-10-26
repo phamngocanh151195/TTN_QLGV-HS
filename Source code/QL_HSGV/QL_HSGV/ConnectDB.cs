@@ -16,7 +16,7 @@ namespace QL_HSGV
         {
             try
             {
-                con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=TruongTHPT;Integrated Security=True");
+                con = new SqlConnection(@"Data Source=.;Initial Catalog=TruongTHPT;Integrated Security=True");
                 con.Open();
             }
             catch
@@ -27,6 +27,47 @@ namespace QL_HSGV
         public void DongKN()
         {
             con.Close();
+        }
+        public DataTable Them(string HoTen, string TenMon, string TenLop)
+        {
+            string sql = "insert into tblTTGD(HoTen,TenMon,TenLop) values(N'" + HoTen + "',N'" + TenMon + "','" + TenLop + "')";
+            MoKN();
+            //if not exists(select HoTen,TenMon from tblTTGD where HoTen='" + HoTen + "' and TenMon='" + TenMon + "') 
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            try
+            {
+                da.Fill(dt);
+            }
+            catch
+            {
+                MessageBox.Show("Đã tồn tại nội dung!!!");
+            }
+            DongKN();
+            return dt;
+        }
+        public DataTable Sua(string HoTen, string TenMon, string TenLop)
+        {
+            string sql = "update tblTTGD set TenLop=N'" + TenLop + "' where HoTen=N'" + HoTen + "' and TenMon=N'" + TenMon + "'";
+            MoKN();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DongKN();
+            return dt;
+        }
+        public DataTable Xoa(string HoTen, string TenMon, string TenLop)
+        {
+            string sql = "delete from tblTTGD where HoTen=N'" + HoTen + "' and TenMon=N'" + TenMon + "'";
+            MoKN();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DongKN();
+            return dt;
         }
         public DataTable Get(string sql)
         {

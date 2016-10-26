@@ -12,6 +12,7 @@ namespace QL_HSGV
 {
     public partial class Frm_HS : Form
     {
+        public static string Uutien;
         private bool _dangtimma = false;
         private bool _dangtimten = false;
         private bool _dangtimlop = false;
@@ -19,6 +20,11 @@ namespace QL_HSGV
         public Frm_HS()
         {
             InitializeComponent();
+            if(Uutien == "1")
+            {
+                btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = btnLammoi.Enabled = true;
+            }
+            else btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = btnLammoi.Enabled = false;
         }
 
         private void Frm_HS_Load(object sender, EventArgs e)

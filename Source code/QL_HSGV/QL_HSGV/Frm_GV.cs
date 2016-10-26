@@ -13,7 +13,9 @@ namespace QL_HSGV
 {
     public partial class Frm_GV : Form
     {
-        string strConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=TruongTHPT;Integrated Security=True";    
+        public static string Uutien;
+
+        string strConnectionString = @"Data Source=.;Initial Catalog=TruongTHPT;Integrated Security=True";    
         ConnectDB CN = new ConnectDB();
         SqlDataAdapter daGiaoVien = null;
         DataTable dtGiaoVien = null;
@@ -35,6 +37,11 @@ namespace QL_HSGV
         public Frm_GV()
         {
             InitializeComponent();
+            if (Uutien == "1")
+            {
+                txt_Them.Enabled = btn_Sua.Enabled = btn_Xoa.Enabled = btn_KiemTra.Enabled = btn_Luu.Enabled = btn_QuayLai.Enabled = btn_LamMoi.Enabled = true;
+            }
+            else txt_Them.Enabled = btn_Sua.Enabled = btn_Xoa.Enabled = btn_KiemTra.Enabled = btn_Luu.Enabled = btn_QuayLai.Enabled = btn_LamMoi.Enabled = false;
         }
                 
         
@@ -86,10 +93,12 @@ namespace QL_HSGV
                 if (CN.Get("select * from tblGiaoVien where MaGV= '" + txt_TimKiem.Text + "' ") != null)
                 {
                     // MessageBox.Show("Tìm kiếm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=TruongTHPT;Integrated Security=True");
+
+
+                    SqlConnection conn = new SqlConnection(strConnectionString);
                     conn.Open();
                     // đây là đổ dữ liệu vào bảng 
-                    daGiaoVien = new SqlDataAdapter("select * from tblGiaoVien where MaGV='" + txt_TimKiem.Text + "'", conn);
+                    daGiaoVien = new SqlDataAdapter("select * from tblGiaoVien where MaGV like N'%" + txt_TimKiem.Text + "%'", conn);
                     dtGiaoVien = new DataTable();
                     dtGiaoVien.Clear();
                     daGiaoVien.Fill(dtGiaoVien);
@@ -108,11 +117,13 @@ namespace QL_HSGV
             if (chk_TenGV.Checked == true)
             // goi store procedure tim theo ma( nhap vao text)
             {
-                if (CN.Get("select * from tblGiaoVien where HoTen= N'" + txt_TimKiem.Text + "'") != null)
+                if (CN.Get("select * from tblGiaoVien where HoTen like N'%" + txt_TimKiem.Text + "%'") != null)
                 {
                     //MessageBox.Show("Tìm kiếm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=TruongTHPT;Integrated Security=True");
+
+                    SqlConnection conn = new SqlConnection(strConnectionString);
                     conn.Open();
+
                     // đây là đổ dữ liệu vào bảng 
                     daGiaoVien = new SqlDataAdapter("select * from tblGiaoVien where HoTen=N'" + txt_TimKiem.Text + "'", conn);
                     dtGiaoVien = new DataTable();
@@ -157,6 +168,7 @@ namespace QL_HSGV
             string a = "themGiaoVien";
             SqlConnection conn = new SqlConnection(strConnectionString);
             conn.Open();
+            CN.MoKN();
             SqlCommand sqlcmd = new SqlCommand(a, conn);
             sqlcmd.CommandType = CommandType.StoredProcedure;
             sqlcmd.Parameters.AddWithValue("@MaGV", MaGV);
@@ -168,8 +180,10 @@ namespace QL_HSGV
             sqlcmd.Parameters.AddWithValue("@Luong", int.Parse(Luong));
             sqlcmd.Parameters.AddWithValue("@MaMon", MaMon);
             sqlcmd.ExecuteNonQuery();
+            
             conn.Dispose();     
             conn.Close();
+             
         }
 
         public void xoaGiaoVien(string MaGV)

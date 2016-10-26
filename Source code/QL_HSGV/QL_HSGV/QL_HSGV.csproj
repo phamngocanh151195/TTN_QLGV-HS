@@ -150,7 +150,11 @@
     <None Include="Resources\Delete.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\Floppy-Small-icon %281%29.png" />
+=======
+    <None Include="Resources\114004baoxaydung_image0021.jpg" />
+>>>>>>> 53f3b3052bc5a0138d25970f2f7338bfc0953eb1
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
