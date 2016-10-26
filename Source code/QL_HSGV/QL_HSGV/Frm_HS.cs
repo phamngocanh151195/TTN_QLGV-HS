@@ -31,8 +31,6 @@ namespace QL_HSGV
             try
             {
                 dgvHocSinh.CurrentRow.Selected = true; //dữ liệu đc chọn cả dòng
-                btnSua.Enabled = true;
-                btnXoa.Enabled = true;
             }
             catch
             { }
@@ -108,6 +106,44 @@ namespace QL_HSGV
         private void txtTimLop_Click(object sender, EventArgs e)
         {
             if (!_dangtimlop) txtTimLop.Text = "";
+        }
+
+        private void dgvHocSinh_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex>=0&&e.ColumnIndex>=0)
+            {
+                btnSua.Enabled = true;
+                btnXoa.Enabled = true;
+            }
+        }
+
+        private void dgvHocSinh_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Frm_ThongTinHS frmTTHS = new Frm_ThongTinHS(dgvHocSinh.CurrentRow.Cells[0].Value.ToString());
+            frmTTHS.ShowDialog();
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            Frm_ThongTinHS frmTTHS = new Frm_ThongTinHS(dgvHocSinh.CurrentRow.Cells[0].Value.ToString());
+            frmTTHS.ShowDialog();
+        }
+
+        private void btnLammoi_Click(object sender, EventArgs e)
+        {
+            dgvHocSinh.DataSource = CN.Get("Select MaHS,Hovaten,GT,Ngaysinh ,Diachi,quequan,TenLop from tblhocsinh a,tblLop b where a.Malop=b.MaLop");
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult dlrXoa;
+            dlrXoa=MessageBox.Show("Bạn chắc chắn muốn xóa?","Xóa học sinh",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+            if(dlrXoa==DialogResult.OK)
+            {
+                CN.Excecute(@"delete  from tblHocsinh where mahs='" + dgvHocSinh.CurrentRow.Cells[0].Value.ToString() + "'");
+                dgvHocSinh.DataSource = CN.Get("Select MaHS,Hovaten,GT,Ngaysinh ,Diachi,quequan,TenLop from tblhocsinh a,tblLop b where a.Malop=b.MaLop");
+            }
+            
         }
 
     }

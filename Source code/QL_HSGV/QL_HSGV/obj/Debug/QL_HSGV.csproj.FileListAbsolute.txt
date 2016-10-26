@@ -55,3 +55,4 @@ C:\Users\Hiếu Học\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\
 C:\Users\Hiếu Học\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Properties.Resources.resources
 C:\Users\Hiếu Học\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csproj.GenerateResource.Cache
 >>>>>>> 5291b8d1a676659bb0fbf4c4399f66a1315ecab8
+D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_ThongTinHS.resources

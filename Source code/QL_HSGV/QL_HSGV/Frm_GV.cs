@@ -67,40 +67,13 @@ namespace QL_HSGV
                 txt_Luong.Text = dgv_GiaoVien.Rows[CurrentIndex].Cells[6].Value.ToString();
                 txt_MaMon.Text = dgv_GiaoVien.Rows[CurrentIndex].Cells[7].Value.ToString();
             }
-            catch (SqlException ex)
+            catch
             {
                 MessageBox.Show("Lỗi rồi!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }       
         
         private void dgv_GiaoVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
-
-        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
@@ -274,7 +247,7 @@ namespace QL_HSGV
                     MessageBox.Show("bạn đã xóa thành công");  
                 
                 }
-                catch (SqlException ex)
+                catch
                 {
                     MessageBox.Show("Xoá không thành công!");
                 }
@@ -330,7 +303,7 @@ namespace QL_HSGV
                             MoDieuKhien();
                             txt_MaGV.Enabled = true;
                         }
-                        catch (SqlException ex)
+                        catch
                         {
                             MessageBox.Show("Bạn thêm bị lỗi rồi!");
                         }
@@ -374,7 +347,7 @@ namespace QL_HSGV
                             txt_MaGV.Enabled = true;
                             choice_return = 2;
                         }
-                        catch (SqlException ex)
+                        catch
                         {
                             MessageBox.Show("Bạn sửa bị lỗi rồi!");
                         }

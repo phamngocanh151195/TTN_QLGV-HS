@@ -30,6 +30,7 @@
         {
             this.DTGV_GV = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.cbo_GioiTinh = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -70,7 +71,6 @@
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.txt_Them = new System.Windows.Forms.Button();
-            this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.DTGV_GV)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -112,6 +112,13 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // dtp_NgaySinh
+            // 
+            this.dtp_NgaySinh.Location = new System.Drawing.Point(83, 145);
+            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
+            this.dtp_NgaySinh.Size = new System.Drawing.Size(158, 20);
+            this.dtp_NgaySinh.TabIndex = 18;
+            // 
             // cbo_GioiTinh
             // 
             this.cbo_GioiTinh.FormattingEnabled = true;
@@ -132,7 +139,6 @@
             this.label8.Size = new System.Drawing.Size(66, 13);
             this.label8.TabIndex = 15;
             this.label8.Text = "Mã môn học";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -142,7 +148,6 @@
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "Lương";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -152,7 +157,6 @@
             this.label6.Size = new System.Drawing.Size(75, 13);
             this.label6.TabIndex = 13;
             this.label6.Text = "Số Điện Thoại";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -162,7 +166,6 @@
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "Địa chỉ";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -254,7 +257,6 @@
             this.groupBox2.Size = new System.Drawing.Size(293, 176);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btn_TimKiem
             // 
@@ -475,13 +477,6 @@
             this.txt_Them.Text = "Thêm";
             this.txt_Them.UseVisualStyleBackColor = true;
             this.txt_Them.Click += new System.EventHandler(this.txt_Them_Click);
-            // 
-            // dtp_NgaySinh
-            // 
-            this.dtp_NgaySinh.Location = new System.Drawing.Point(83, 145);
-            this.dtp_NgaySinh.Name = "dtp_NgaySinh";
-            this.dtp_NgaySinh.Size = new System.Drawing.Size(158, 20);
-            this.dtp_NgaySinh.TabIndex = 18;
             // 
             // Frm_GV
             // 
