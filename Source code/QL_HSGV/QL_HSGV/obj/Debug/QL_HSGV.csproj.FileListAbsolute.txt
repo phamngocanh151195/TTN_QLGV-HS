@@ -10,8 +10,6 @@ E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_TTGD.res
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Properties.Resources.resources
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csproj.GenerateResource.Cache
 <<<<<<< HEAD
-E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_DangNhap.resources
-<<<<<<< HEAD
 D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\Debug\QL_HSGV.exe.config
 D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.exe
 D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.pdb
@@ -43,7 +41,6 @@ C:\Users\Hiếu Học\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\
 C:\Users\Hiếu Học\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csproj.GenerateResource.Cache
 >>>>>>> 5291b8d1a676659bb0fbf4c4399f66a1315ecab8
 D:\1-Study\4-HK6\ThucTapNhom\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_ThongTinHS.resources
-=======
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.exe
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.pdb
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csprojResolveAssemblyReference.cache

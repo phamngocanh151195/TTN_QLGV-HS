@@ -262,12 +262,12 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_HS";
-<<<<<<< HEAD
+//<<<<<<< HEAD
             this.Text = "Quản lý học sinh";
-=======
+//=======
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_HS";
->>>>>>> 53f3b3052bc5a0138d25970f2f7338bfc0953eb1
+//>>>>>>> 53f3b3052bc5a0138d25970f2f7338bfc0953eb1
             this.Load += new System.EventHandler(this.Frm_HS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinh)).EndInit();
             this.panel1.ResumeLayout(false);
