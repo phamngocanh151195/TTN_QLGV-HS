@@ -24,7 +24,7 @@ namespace QL_HSGV
             {
                 btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = btnLammoi.Enabled = true;
             }
-            else btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = btnLammoi.Enabled = false;
+            else btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = false;
         }
 
         private void Frm_HS_Load(object sender, EventArgs e)
@@ -116,7 +116,7 @@ namespace QL_HSGV
 
         private void dgvHocSinh_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex>=0&&e.ColumnIndex>=0)
+            if(e.RowIndex>=0&&e.ColumnIndex>=0 && Uutien=="1")
             {
                 btnSua.Enabled = true;
                 btnXoa.Enabled = true;
@@ -125,8 +125,15 @@ namespace QL_HSGV
 
         private void dgvHocSinh_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Frm_ThongTinHS frmTTHS = new Frm_ThongTinHS(dgvHocSinh.CurrentRow.Cells[0].Value.ToString());
-            frmTTHS.ShowDialog();
+            
+                Frm_ThongTinHS frmTTHS = new Frm_ThongTinHS(dgvHocSinh.CurrentRow.Cells[0].Value.ToString());
+                if (Uutien == "1")
+                {
+                    frmTTHS.kt = -1;
+                }
+                else frmTTHS.kt = -2;
+                frmTTHS.ShowDialog();
+               
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -150,6 +157,12 @@ namespace QL_HSGV
                 dgvHocSinh.DataSource = CN.Get("Select MaHS,Hovaten,GT,Ngaysinh ,Diachi,quequan,TenLop from tblhocsinh a,tblLop b where a.Malop=b.MaLop");
             }
             
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Frm_ThongTinHS frmTTHS = new Frm_ThongTinHS(1);
+            frmTTHS.ShowDialog();
         }
 
     }

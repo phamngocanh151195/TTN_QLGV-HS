@@ -44,7 +44,7 @@
             this.cboLop = new System.Windows.Forms.ComboBox();
             this.cboGT = new System.Windows.Forms.ComboBox();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbTittle = new System.Windows.Forms.Label();
             this.btnDong = new System.Windows.Forms.Button();
             this.txtNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
@@ -62,28 +62,28 @@
             this.txtHoTen.Location = new System.Drawing.Point(118, 95);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(154, 22);
-            this.txtHoTen.TabIndex = 0;
+            this.txtHoTen.TabIndex = 1;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(118, 185);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(415, 22);
-            this.txtDiaChi.TabIndex = 0;
+            this.txtDiaChi.TabIndex = 5;
             // 
             // txtQueQuan
             // 
             this.txtQueQuan.Location = new System.Drawing.Point(118, 232);
             this.txtQueQuan.Name = "txtQueQuan";
             this.txtQueQuan.Size = new System.Drawing.Size(154, 22);
-            this.txtQueQuan.TabIndex = 0;
+            this.txtQueQuan.TabIndex = 6;
             // 
             // txtPhuHuynh
             // 
             this.txtPhuHuynh.Location = new System.Drawing.Point(118, 276);
             this.txtPhuHuynh.Name = "txtPhuHuynh";
             this.txtPhuHuynh.Size = new System.Drawing.Size(154, 22);
-            this.txtPhuHuynh.TabIndex = 0;
+            this.txtPhuHuynh.TabIndex = 7;
             // 
             // label1
             // 
@@ -180,7 +180,7 @@
             this.cboLop.Location = new System.Drawing.Point(420, 94);
             this.cboLop.Name = "cboLop";
             this.cboLop.Size = new System.Drawing.Size(140, 23);
-            this.cboLop.TabIndex = 3;
+            this.cboLop.TabIndex = 2;
             // 
             // cboGT
             // 
@@ -188,7 +188,7 @@
             this.cboGT.Location = new System.Drawing.Point(420, 132);
             this.cboGT.Name = "cboGT";
             this.cboGT.Size = new System.Drawing.Size(140, 23);
-            this.cboGT.TabIndex = 3;
+            this.cboGT.TabIndex = 4;
             // 
             // btnLuu
             // 
@@ -203,16 +203,16 @@
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // label9
+            // lbTittle
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label9.Location = new System.Drawing.Point(203, 10);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(165, 22);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Thông tin Học sinh";
+            this.lbTittle.AutoSize = true;
+            this.lbTittle.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTittle.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lbTittle.Location = new System.Drawing.Point(203, 10);
+            this.lbTittle.Name = "lbTittle";
+            this.lbTittle.Size = new System.Drawing.Size(165, 22);
+            this.lbTittle.TabIndex = 1;
+            this.lbTittle.Text = "Thông tin Học sinh";
             // 
             // btnDong
             // 
@@ -232,7 +232,7 @@
             this.txtNgaySinh.Location = new System.Drawing.Point(118, 136);
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.Size = new System.Drawing.Size(191, 22);
-            this.txtNgaySinh.TabIndex = 4;
+            this.txtNgaySinh.TabIndex = 3;
             // 
             // Frm_ThongTinHS
             // 
@@ -251,7 +251,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lbTittle);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtQueQuan);
             this.Controls.Add(this.txtPhuHuynh);
@@ -286,7 +286,7 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.ComboBox cboLop;
         private System.Windows.Forms.ComboBox cboGT;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbTittle;
         private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.DateTimePicker txtNgaySinh;
     }
