@@ -45,3 +45,4 @@ E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.exe
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.pdb
 E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.csprojResolveAssemblyReference.cache
 >>>>>>> 53f3b3052bc5a0138d25970f2f7338bfc0953eb1
+E:\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\obj\Debug\QL_HSGV.Frm_ThongTinHS.resources

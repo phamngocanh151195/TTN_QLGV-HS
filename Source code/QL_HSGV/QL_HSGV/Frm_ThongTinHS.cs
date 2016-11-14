@@ -52,6 +52,50 @@ namespace QL_HSGV
                 txtNgaySinh.Text = data.Rows[0]["ngaysinh"].ToString();
                 if (kt == -2) btnLuu.Enabled = false;
             }
+            else
+            {
+                txtMaHS.Text = Ma_TuDongTang();
+            }
+        }
+
+        public string Ma_TuDongTang()
+        {
+            DataTable dt = new DataTable();
+            dt = _con.Get(@"select * from tblHocSinh");
+            string ma = "";
+            int so = 0, i = 1000;
+            for (int j = 1; j <= dt.Rows.Count - 1; j++)
+            {
+                ma = Convert.ToString(dt.Rows[j - 1][0].ToString());
+                ma = ma.Remove(0, 2);
+                so = Convert.ToInt32(ma);
+                if (so != j) { so = j - 1; i = 0; break; }
+            }
+            if (i != 0)
+            {
+                ma = Convert.ToString(dt.Rows[dt.Rows.Count - 1][0].ToString());
+                ma = ma.Remove(0, 2);
+                so = Convert.ToInt32(ma);
+            }
+
+            ma = "HS";
+            so += 1;
+            if (so < 10)
+                ma = ma + "0000000";
+            else if (so < 100)
+                ma = ma + "000000";
+            else if (so < 1000)
+                ma = ma + "00000";
+            else if (so < 10000)
+                ma = ma + "0000";
+            else if (so < 100000)
+                ma = ma + "000";
+            else if (so < 1000000)
+                ma = ma + "00";
+            else if (so < 10000000)
+                ma = ma + "0";
+            ma = ma + so.ToString();
+            return ma;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
