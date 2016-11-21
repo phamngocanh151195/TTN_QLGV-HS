@@ -35,12 +35,15 @@ namespace QL_HSGV
        
         private void Frm_ThongTinHS_Load(object sender, EventArgs e)
         {
+            //DataTable data = _con.Get(@"select *from tblhocsinh a,tblLop b where a.malop=b.malop and mahs='" + txtMaHS.Text + "'");
+            cboLop.DataSource = _con.Get(@"select malop,tenlop from tblLop");
+            cboLop.ValueMember = "malop";
+            cboLop.DisplayMember = "tenlop";
+
+            
+
             if (kt <= 0)
             {
-                cboLop.DataSource = _con.Get(@"select malop,tenlop from tblLop");
-                cboLop.ValueMember = "malop";
-                cboLop.DisplayMember = "tenlop";
-
                 DataTable data = _con.Get(@"select *from tblhocsinh a,tblLop b where a.malop=b.malop and mahs='" + maHS + "'");
                 txtMaHS.Text = maHS;
                 txtHoTen.Text = data.Rows[0]["HovaTen"].ToString();

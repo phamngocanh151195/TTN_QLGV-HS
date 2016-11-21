@@ -14,7 +14,7 @@ namespace QL_HSGV
     public partial class Frm_GV : Form
     {
         public static string Uutien;
-
+        ConnectDB _con = new ConnectDB();
         string strConnectionString = @"Data Source=.;Initial Catalog=TruongTHPT;Integrated Security=True";    
         ConnectDB CN = new ConnectDB();
         SqlDataAdapter daGiaoVien = null;
@@ -90,7 +90,7 @@ namespace QL_HSGV
             if (chk_MaGV.Checked == true)
             // goi store procedure tim theo ma( nhap vao text)
             {
-                if (CN.Get("select * from tblGiaoVien where MaGV= '" + txt_TimKiem.Text + "' ") != null)
+                if (CN.Get("select * from tblGiaoVien where MaGV like N'%" + txt_TimKiem.Text + "%' ") != null)
                 {
                     // MessageBox.Show("Tìm kiếm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -125,7 +125,7 @@ namespace QL_HSGV
                     conn.Open();
 
                     // đây là đổ dữ liệu vào bảng 
-                    daGiaoVien = new SqlDataAdapter("select * from tblGiaoVien where HoTen=N'" + txt_TimKiem.Text + "'", conn);
+                    daGiaoVien = new SqlDataAdapter("select * from tblGiaoVien where HoTen like N'%" + txt_TimKiem.Text + "%'", conn);
                     dtGiaoVien = new DataTable();
                     dtGiaoVien.Clear();
                     daGiaoVien.Fill(dtGiaoVien);
@@ -300,6 +300,7 @@ namespace QL_HSGV
                         // goi mot ham them voi nhu tren
                         try
                         {
+                            txt_MaGV.Text = Ma_TuDongTang();
                             themGiaoVien(txt_MaGV.Text, txt_HoTen.Text, cbo_GioiTinh.Text, dtp_NgaySinh.Value.Date.ToString("dd/MM/yyyy"), txt_DiaChi.Text, txt_Sdt.Text, txt_Luong.Text, txt_MaMon.Text);
                             MessageBox.Show("Bạn đã thêm thành công");
                             // đưa ra được datagrid view
@@ -425,6 +426,45 @@ namespace QL_HSGV
         private void btn_Thoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        public string Ma_TuDongTang()
+        {
+            DataTable dt = new DataTable();
+            dt = _con.Get(@"select * from tblHocSinh");
+            string ma = "";
+            int so = 0, i = 1000;
+            for (int j = 1; j <= dt.Rows.Count - 1; j++)
+            {
+                ma = Convert.ToString(dt.Rows[j - 1][0].ToString());
+                ma = ma.Remove(0, 2);
+                so = Convert.ToInt32(ma);
+                if (so != j) { so = j - 1; i = 0; break; }
+            }
+            if (i != 0)
+            {
+                ma = Convert.ToString(dt.Rows[dt.Rows.Count - 1][0].ToString());
+                ma = ma.Remove(0, 2);
+                so = Convert.ToInt32(ma);
+            }
+
+            ma = "GV";
+            so += 1;
+            if (so < 10)
+                ma = ma + "0000000";
+            else if (so < 100)
+                ma = ma + "000000";
+            else if (so < 1000)
+                ma = ma + "00000";
+            else if (so < 10000)
+                ma = ma + "0000";
+            else if (so < 100000)
+                ma = ma + "000";
+            else if (so < 1000000)
+                ma = ma + "00";
+            else if (so < 10000000)
+                ma = ma + "0";
+            ma = ma + so.ToString();
+            return ma;
         }
     }
 }
