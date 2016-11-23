@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace QL_HSGV
 {
@@ -62,6 +63,11 @@ namespace QL_HSGV
         private void FrmMain_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void TStrip_Help_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\Users\Hien\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\HD_QLHSGV.docx");
         }
     }
 }
