@@ -90,6 +90,7 @@
             this.TStrip_Help.Name = "TStrip_Help";
             this.TStrip_Help.Size = new System.Drawing.Size(44, 20);
             this.TStrip_Help.Text = "Help";
+            this.TStrip_Help.Click += new System.EventHandler(this.TStrip_Help_Click);
             // 
             // TStrip_Thoat
             // 
