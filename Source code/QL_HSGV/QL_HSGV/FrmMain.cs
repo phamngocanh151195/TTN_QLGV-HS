@@ -67,7 +67,7 @@ namespace QL_HSGV
 
         private void TStrip_Help_Click(object sender, EventArgs e)
         {
-            Process.Start(@"C:\Users\Hien\Documents\GitHub\TTN_QLGV-HS\Source code\QL_HSGV\QL_HSGV\bin\HD_QLHSGV.docx");
+            Process.Start(Application.StartupPath+"\\HD_QLHSGV.docx");
         }
     }
 }
